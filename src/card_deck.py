@@ -35,3 +35,12 @@ class CardDeck():
     def shuffle(self):
         """"Shuffle the current deck a number of times"""
         random.shuffle(self.current)
+
+    def deal_n_cards(self, n):
+        """"Get a given number (n) cards from the current deck of cards"""
+
+        cards = []
+        for _ in range(n):
+            cards.append(self.current.pop())        
+
+        return cards
