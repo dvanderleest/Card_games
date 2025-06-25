@@ -32,11 +32,11 @@ class CardDeck():
         """Set the current deck of the deck object to the ordered default"""
         self.current = list((v, s) for s in CardDeck.SUITS for v in CardDeck.VALUES)
 
-    def shuffle(self):
-        """"Shuffle the current deck a number of times"""
+    def shuffle(self) -> None:
+        """"Shuffle the current deck"""
         random.shuffle(self.current)
 
-    def deal_n_cards(self, n):
+    def deal_n_cards(self, n) -> list:
         """"Get a given number (n) cards from the current deck of cards"""
 
         cards = []
