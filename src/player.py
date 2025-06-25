@@ -7,9 +7,9 @@ class Player():
     Instances of this class have a name and a hand (list) of cards that can be used to play games. Individual cards can be any object, but are often an instance of thr Card class.
     """
     def __init__(self, name):
+        super().__init__()
         self.name = name
         self.hand = []
-        super().__init__()
 
     def add_card_to_top_of_hand(self, card):
         """
@@ -40,5 +40,5 @@ class Player():
         return self.hand
 
     def sort_hand(self):
-        """Sorts and sets the players current hand on lexicographical order"""
+        """Sorts and sets the players current hand following lexicographical order"""
         self.hand = sorted(self.hand)

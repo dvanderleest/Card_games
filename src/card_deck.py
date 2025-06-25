@@ -15,6 +15,7 @@ class CardDeck():
 
     def __init__(self) -> None:
         """Creating a deck of cards"""
+        super().__init__()
         self.current = []
         self.reset()
 
