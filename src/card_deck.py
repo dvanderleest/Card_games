@@ -41,6 +41,6 @@ class CardDeck():
 
         cards = []
         for _ in range(n):
-            cards.append(self.current.pop())        
+            cards.append(self.current.pop())
 
         return cards
